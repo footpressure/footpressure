@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>压力热图与COP轨迹可视化</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入 ECharts -->
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>压力分布可视化</h1>
+        <!-- 热图容器 -->
+        <div class="chart-container">
+            <div id="heatmap" class="chart"></div>
+        </div>
+        <!-- COP轨迹容器 -->
+        <div class="chart-container">
+            <div id="copTrajectory" class="chart"></div>
+        </div>
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <button id="playPause">暂停</button>
+            <button id="replay">重播</button>
+            <div class="frame-info">当前帧：<span id="frameNum">1</span></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
